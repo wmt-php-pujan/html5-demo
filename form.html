@@ -19,32 +19,31 @@
         .rg{
             text-align: right;
         }
+        .title{
+            font-size: 20px;
+            letter-spacing:1px;
+            text-align: center;
+        }
     </style>
 </head>
-<body>
-    
+<body> 
     <form action="">
+        <center>
         <table>
             <tr>
-                <td><strong>Personal Information</strong></td>
+                <td class="title"><strong>Personal Information</strong></td>
                 <td></td>
             </tr>
             <tr>
                 <td class="rg">First Name :</td>
                 <td><input type="text" name="fname"></td>
-            </tr>
-            
+            </tr>  
             <tr>
                 <td class="rg">Last Name :</td> 
                 <td><input type="text" name="lname"></td>
-            </tr>
-                
-
-
+            </tr>      
             <tr>
-
                 <td class="rg"> Date of Birth :</td>
-
                 <td>
                     <select name="month" id="month" required>
                         <option hidden="">Month</option>
@@ -61,7 +60,6 @@
                         <option value="11">11</option>
                         <option value="12">12</option>
                     </select>
-                
 
                 <select name="day" id="day" required>
                     <option hidden="">Day</option>
@@ -136,10 +134,8 @@
                 </td>
             </tr>
             
-        
-
             <tr>
-                <td><strong>Account Information</strong></td>  
+                <td class="title"><strong>Account Information</strong></td>  
                 <td></td>
             </tr>
 
@@ -183,9 +179,9 @@
                     <span>(not case-sensitive)</span>
                 </td>
             </tr>
-               
+                      
         <tr>
-            <td><strong>Contact Information</strong></td> 
+            <td class="title"><strong>Contact Information</strong></td> 
             <td></td>
         </tr>
             <tr>
@@ -231,6 +227,7 @@
                 </td>
             </tr>
     </table>
+    </center>
     </form>
 
 </body>
