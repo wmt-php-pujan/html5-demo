@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+    <style>
+        span{
+            font-size: 12px;
+        }
+        /* table,td,tr{
+            border: 1px solid #000000;
+            border-collapse: collapse;
+        } */
+        td,tr{
+            padding: 5px 5px 5px 10px;
+        }
+        .rg{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    
+    <form action="">
+        <table>
+            <tr>
+                <td><strong>Personal Information</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="rg">First Name :</td>
+                <td><input type="text" name="fname"></td>
+            </tr>
+            
+            <tr>
+                <td class="rg">Last Name :</td> 
+                <td><input type="text" name="lname"></td>
+            </tr>
+                
+
+
+            <tr>
+
+                <td class="rg"> Date of Birth :</td>
+
+                <td>
+                    <select name="month" id="month" required>
+                        <option hidden="">Month</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                
+
+                <select name="day" id="day" required>
+                    <option hidden="">Day</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+
+                <select name="year" id="year" required> 
+                    <option hidden="">Year</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                    <option value="2016">2016</option>
+                    <option value="2015">2015</option>
+                    <option value="2014">2014</option>
+                    <option value="2013">2013</option>
+                    <option value="2012">2012</option>
+                    <option value="2011">2011</option>
+                    <option value="2010">2010</option>
+                    <option value="2009">2009</option>
+                    <option value="2008">2008</option>
+                    <option value="2007">2007</option>
+                    <option value="2006">2006</option>
+                    <option value="2005">2005</option>
+                    <option value="2004">2004</option>
+                    <option value="2003">2003</option>
+                    <option value="2002">2002</option>
+                    <option value="2001">2001</option>
+                    <option value="2000">2000</option>
+                </select>
+                </td>           
+            </tr>
+               
+            <tr>
+                <td class="rg">Gender :</td>
+                <td>    
+                    <select name="gender" id="gender">
+                        <option hidden="">Choose a gender</option>
+                        <option value="male">male</option>
+                        <option value="female">female</option>
+                        <option value="other">other</option>
+                    </select>
+                </td>
+            </tr>
+            
+        
+
+            <tr>
+                <td><strong>Account Information</strong></td>  
+                <td></td>
+            </tr>
+
+            <tr>
+                <td class="rg">Email :</td> 
+                <td><input type="email" name="email"><br>
+                    <span>(Your email address will be your username)</span>
+                </td>
+            </tr> 
+            
+            <tr>
+                <td class="rg">Re-type Email :</td> 
+                <td><input type="email" name="reemail"></td>
+            </tr>
+            
+            <tr>
+                <td class="rg">Password:</td> 
+                <td> <input type="password" name="pwd"><br>
+                    <span>(Min. 8 characters,1 number,case-sensitive)</span>
+                </td>
+            </tr>
+            
+            <tr>
+                <td class="rg"> Re-type Password :</td>
+                <td> <input type="password" name="repwd"></td>
+            </tr>
+            
+            <tr>
+                <td class="rg"> Security Question :</td>
+                <td> <select name="sq" id="sq" required>
+                    <option hidden="">Choose a security question</option>
+                    <option value="name">pet-name</option>
+                    <option value="city">city</option>
+                    <option value="birth">birthplace</option>
+                    </select>
+                </td>
+            </tr> 
+            <tr>
+                <td class="rg"> Security Answer:</td>
+                <td><input type="text" name="ans"><br>
+                    <span>(not case-sensitive)</span>
+                </td>
+            </tr>
+               
+        <tr>
+            <td><strong>Contact Information</strong></td> 
+            <td></td>
+        </tr>
+            <tr>
+                <td class="rg">Address :</td> 
+                <td><input type="text" name="address"></td>
+            </tr> 
+            
+            <tr>
+                <td class="rg">City :</td class="rg"> 
+                <td><input type="text" name="city"></td>
+            </tr>
+            
+            <tr>
+                <td class="rg">State :</td> 
+                <td>
+                    <select name="state" id="state">
+                        <option hidden="">Choose a state</option>
+                        <option value="gujarat">Gujarat</option>
+                        <option value="maharatra">Maharatra</option>
+                        <option value="kerla">Kerla</option>
+                        <option value="panjab">Panjab</option>
+                    </select>
+                </td>
+            </tr>
+            
+            <tr>
+                <td class="rg"> Zip Code :</td> 
+                <td><input type="text" name="zip" size="9">
+                    <input type="text" value="optional" size="8" disabled>
+                </td>
+            </tr>
+            
+            <tr>
+                <td class="rg">Phone :</td> 
+                <td>
+                    <input type="text" name="phone" required>
+                    <select name="" id="">
+                        <option value="mobile" selected>Mobile</option>
+                        <option value="landline">Land-line</option>
+                    </select>
+                    <br>
+                    <span>(No spaces or dashes)</span>
+                </td>
+            </tr>
+    </table>
+    </form>
+
+</body>
+</html>     
